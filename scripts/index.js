@@ -2,9 +2,10 @@
  
 let money = document.querySelector("#wallet")
  
-
+money.innerText = localStorage.getItem("amount") 
+ 
   let previous = localStorage.getItem("amount") 
-  money.innerText = previous || 0
+   
 
 let add =()=>{
 
